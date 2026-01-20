@@ -27,4 +27,12 @@ tests/
 - Roslyn (planned)
 
 ## Project Status
-Initial setup (Day 0)
+- **Day 0**: Initial setup  
+  - Solution & project structure
+  - `.editorconfig`
+  - Initial README
+
+- **Day 1**: Core abstractions  
+  - Rule contracts (`IRule<T>`)
+  - Validation result model (`RuleResult`)
+  - Rule grouping abstractions
