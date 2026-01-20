@@ -14,12 +14,12 @@ rules can be defined, evaluated, and extended independently from any UI or API l
 
 ## Solution Structure
 src/
-  ├─ Core        -> Abstractions and contracts
-  ├─ Engine      -> Rule execution logic
-  └─ Analyzers   -> Roslyn analyzers (planned)
+  - Core        -> Abstractions and contracts
+  - Engine      -> Rule execution logic
+  - Analyzers   -> Roslyn analyzers (planned)
 
-tests/
-  └─ Unit tests
+tests/ 
+-    Unit tests
 
 ## Technology
 - .NET
