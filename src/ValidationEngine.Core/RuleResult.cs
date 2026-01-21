@@ -1,17 +1,19 @@
 namespace RuleBasedValidation.Core;
 
-public sealed record RuleResult(
-    bool IsValid,
-    string Code,
-    string Message)
+public sealed class RuleResult
 {
-    //Bir kuralın sonucunu standart ve immutable şekilde temsil eder
-    //Exception yerine explicit result modeli
-    //Pattern matching için ideal
+    public bool IsMatch { get; }
+    public string RuleName { get; }
 
-    public static RuleResult Success(string code = "OK") =>
-        new(true, code, string.Empty);
+    private RuleResult(bool isMatch, string ruleName)
+    {
+        IsMatch = isMatch;
+        RuleName = ruleName;
+    }
 
-    public static RuleResult Failure(string code, string message) =>
-        new(false, code, message);
+    public static RuleResult Match(string ruleName)
+        => new(true, ruleName);
+
+    public static RuleResult NoMatch(string ruleName)
+        => new(false, ruleName);
 }
