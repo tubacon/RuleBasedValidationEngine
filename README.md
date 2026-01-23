@@ -36,3 +36,13 @@ tests/
   - Rule contracts (`IRule<T>`)
   - Validation result model (`RuleResult`)
   - Rule grouping abstractions
+
+- **Day 2**: Rule implementations  
+  - Concrete rule implementations (`PredicateRule`, `AlwaysTrueRule`)  
+  - Generic and reusable rule definitions  
+  - Async rule evaluation model  
+
+- **Day 3**: Rule engine  
+  - Rule execution pipeline (`RuleEngine<T>`)  
+  - Async evaluation with cancellation support  
+  - Ordered rule processing and result aggregation  
