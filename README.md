@@ -46,3 +46,8 @@ tests/
   - Rule execution pipeline (`RuleEngine<T>`)  
   - Async evaluation with cancellation support  
   - Ordered rule processing and result aggregation  
+
+- **Day 4**: Demo domain  
+  - Sample domain model (`User`)  
+  - Domain-specific rule definitions  
+  - End-to-end rule evaluation example  
