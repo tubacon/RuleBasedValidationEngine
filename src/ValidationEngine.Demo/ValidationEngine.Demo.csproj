@@ -2,9 +2,15 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\RuleBasedValidation.Engine\RuleBasedValidation.Engine.csproj" />
+    <ProjectReference Include="..\..\RuleBasedValidation.Rules\RuleBasedValidation.Rules.csproj" />
+    <ProjectReference Include="..\ValidationEngine.Core\ValidationEngine.Core.csproj" />
+  </ItemGroup>
 
 </Project>
