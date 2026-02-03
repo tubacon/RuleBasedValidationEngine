@@ -50,4 +50,10 @@ tests/
 - **Day 4**: Demo domain  
   - Sample domain model (`User`)  
   - Domain-specific rule definitions  
-  - End-to-end rule evaluation example  
+  - End-to-end rule evaluation example
+
+- **Day 5**: Demo domain refinement  
+  - End-to-end validation flow exercised  
+  - Rule engine usage from a consumer perspective  
+  - Project structure and responsibility clarification  
+
