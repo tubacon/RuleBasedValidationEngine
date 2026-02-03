@@ -1,5 +1,3 @@
-namespace RuleBasedValidation.Core;
-
 public sealed class RuleResult
 {
     public bool IsMatch { get; }

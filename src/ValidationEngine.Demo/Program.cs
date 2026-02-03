@@ -11,6 +11,8 @@ var user = new User
 
 var engine = new RuleEngine<User>(UserRules.All);
 
+/*
+
 var results = await engine.EvaluateAsync(user);
 
 foreach (var result in results)
@@ -18,4 +20,15 @@ foreach (var result in results)
     Console.WriteLine(
         $"{result.RuleName}: {(result.IsMatch ? "PASSED" : "FAILED")}"
     );
+}*/
+
+
+var summary = await engine.ValidateAsync(user);
+
+Console.WriteLine($"Is valid: {summary.IsValid}");
+
+foreach (var failed in summary.FailedRules)
+{
+    Console.WriteLine($"FAILED: {failed.RuleName}");
 }
+
