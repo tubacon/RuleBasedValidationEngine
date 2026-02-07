@@ -23,12 +23,28 @@ foreach (var result in results)
 }*/
 
 
-var summary = await engine.ValidateAsync(user);
+/*var summary = await engine.ValidateAsync(user);
 
 Console.WriteLine($"Is valid: {summary.IsValid}");
 
 foreach (var failed in summary.FailedRules)
 {
     Console.WriteLine($"FAILED: {failed.RuleName}");
+}*/
+
+var results = await engine.EvaluateAsync(user);
+
+if (results.IsSuccessful())
+{
+    Console.WriteLine("Validation passed");
 }
+else
+{
+    Console.WriteLine("Validation failed:");
+    foreach (var rule in results.FailedRuleNames())
+    {
+        Console.WriteLine($"- {rule}");
+    }
+}
+
 
