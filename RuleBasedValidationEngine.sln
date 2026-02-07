@@ -1,15 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
-VisualStudioVersion = 18.3.11408.92 d18.3
+VisualStudioVersion = 18.3.11408.92
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FBF8DCCD-1C6C-4679-BA04-7EC38688AB90}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "benchmarks", "benchmarks", "{51228E3E-439D-47FA-A680-C7F2CDAAF78F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidationEngine.Benchmarks", "benchmarks\ValidationEngine.Benchmarks\ValidationEngine.Benchmarks.csproj", "{9ED31319-4DFD-6F54-491A-39E343C3A181}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidationEngine.Core", "src\ValidationEngine.Core\ValidationEngine.Core.csproj", "{71364342-1F2C-8CDA-4E6D-813B87BC905E}"
 EndProject
@@ -35,10 +31,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9ED31319-4DFD-6F54-491A-39E343C3A181}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9ED31319-4DFD-6F54-491A-39E343C3A181}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9ED31319-4DFD-6F54-491A-39E343C3A181}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9ED31319-4DFD-6F54-491A-39E343C3A181}.Release|Any CPU.Build.0 = Release|Any CPU
 		{71364342-1F2C-8CDA-4E6D-813B87BC905E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{71364342-1F2C-8CDA-4E6D-813B87BC905E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71364342-1F2C-8CDA-4E6D-813B87BC905E}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -68,7 +60,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{9ED31319-4DFD-6F54-491A-39E343C3A181} = {51228E3E-439D-47FA-A680-C7F2CDAAF78F}
 		{71364342-1F2C-8CDA-4E6D-813B87BC905E} = {FBF8DCCD-1C6C-4679-BA04-7EC38688AB90}
 		{34E8AF77-301D-C5DC-BDA7-45BF07F3F32A} = {FBF8DCCD-1C6C-4679-BA04-7EC38688AB90}
 		{6C6CE984-3A60-3C6A-8A64-C5DEA08C9E7D} = {FBF8DCCD-1C6C-4679-BA04-7EC38688AB90}
