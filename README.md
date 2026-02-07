@@ -24,7 +24,6 @@ tests/
 ## Technology
 - .NET
 - C#
-- Roslyn (planned)
 
 ## Project Status
 - **Day 0**: Initial setup  
