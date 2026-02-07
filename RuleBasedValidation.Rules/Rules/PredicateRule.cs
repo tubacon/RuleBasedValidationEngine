@@ -19,6 +19,7 @@ public sealed class PredicateRule<T> : IRule<T>
     {
         var isMatch = _predicate(input);
 
+        // In a real implementation, you might want to handle exceptions that could be thrown by the predicate
         return ValueTask.FromResult(
             isMatch
                 ? RuleResult.Match(_name)

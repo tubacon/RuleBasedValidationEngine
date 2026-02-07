@@ -2,9 +2,9 @@ namespace RuleBasedValidation.Core;
 
 public interface IRule<in T>
 {
-    //Her validation kuralının kontratı
-    //Engine bu interface üzerinden çalışacak
-    //in T → farklı türleri esnek kullanabilmek için
+    // Evaluates the rule against the provided input and returns the result.
+    // The evaluation is asynchronous to allow for any potential I/O operations or complex computations.
+    // The cancellation token allows the evaluation to be cancelled if needed, providing better responsiveness in scenarios where multiple rules are being evaluated.
 
     ValueTask<RuleResult> EvaluateAsync(
         T input,

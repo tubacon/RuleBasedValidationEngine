@@ -2,8 +2,8 @@ namespace RuleBasedValidation.Core;
 
 public interface IRuleSet<in T>
 {
-    //Birden fazla kuralı mantıksal grup olarak temsil eder
-    //Engine bu interface üzerinden kural setlerini işleyecek
+    // Gets the collection of rules in the rule set.
+    // The rules are evaluated in the order they are defined in the collection.
 
     IReadOnlyCollection<IRule<T>> Rules { get; }
 }

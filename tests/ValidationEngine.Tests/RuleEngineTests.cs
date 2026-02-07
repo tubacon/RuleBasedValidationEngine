@@ -7,6 +7,7 @@ using Xunit;
 
 public class RuleEngineTests
 {
+    // This test verifies that the RuleEngine correctly evaluates all provided rules and returns the expected results.
     [Fact]
     public async Task EvaluateAsync_EvaluatesAllRules()
     {

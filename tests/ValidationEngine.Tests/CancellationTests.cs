@@ -7,6 +7,7 @@ using Xunit;
 
 public class CancellationTests
 {
+    // This test verifies that the RuleEngine properly handles cancellation when evaluating rules.
     [Fact]
     public async Task EvaluateAsync_WhenCancelled_ThrowsOperationCanceledException()
     {
@@ -23,6 +24,7 @@ public class CancellationTests
 
     }
 
+    // A simple rule that simulates a long-running operation.
     private sealed class SlowRule : IRule<int>
     {
         public async ValueTask<RuleResult> EvaluateAsync(

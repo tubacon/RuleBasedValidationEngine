@@ -2,6 +2,7 @@ using RuleBasedValidation.Engine;
 using RuleBasedValidation.Demo.Domain;
 using RuleBasedValidation.Demo.Rules;
 
+// Create a sample user that violates some of the defined rules
 var user = new User
 {
     Email = "testexample.com",
@@ -9,29 +10,10 @@ var user = new User
     IsActive = true
 };
 
+// Create a rule engine with the defined rules for the User entity
 var engine = new RuleEngine<User>(UserRules.All);
 
-/*
-
-var results = await engine.EvaluateAsync(user);
-
-foreach (var result in results)
-{
-    Console.WriteLine(
-        $"{result.RuleName}: {(result.IsMatch ? "PASSED" : "FAILED")}"
-    );
-}*/
-
-
-/*var summary = await engine.ValidateAsync(user);
-
-Console.WriteLine($"Is valid: {summary.IsValid}");
-
-foreach (var failed in summary.FailedRules)
-{
-    Console.WriteLine($"FAILED: {failed.RuleName}");
-}*/
-
+// Using extension methods for a more concise syntax
 var results = await engine.EvaluateAsync(user);
 
 if (results.IsSuccessful())
